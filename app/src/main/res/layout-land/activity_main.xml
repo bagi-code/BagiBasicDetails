@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bagicode.www.bagibasicdetails.MainActivity">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_upward_black_24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_downward_black_24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Judul"
+            android:text="Basic Details"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/batas"
+            android:layout_below="@id/Judul"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <EditText
+            android:layout_below="@id/batas"
+            android:id="@+id/frisName"
+            android:hint="Frist Name"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/frisName"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="Reset All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/Judul1"
+            android:text="Basic Details"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/batas1"
+            android:layout_below="@id/Judul1"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <EditText
+            android:layout_below="@id/batas1"
+            android:id="@+id/lastName"
+            android:hint="Last Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lastName"
+            android:hint="TTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:background="@drawable/shape_btn_rectangle_round"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
